@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ドローンの操作</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>
+            <a href="index.html">ドローンの操作</a>
+        </h1>
+        <p>↑<br>なんかズレてね？</p>
+
+        <button
+            class="hamburger"
+            aria-label="メニューを表示"
+            aria-expanded="false"
+            aria-controls="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <nav id="nav-menu">
+        <a href="index.html">HOME</a>
+        <a href="drone_exp.html">ドローンの説明</a>
+        <a href="drone_ctr.html">ドローンの操作</a>
+        <a href="about.html">連絡先/プロフィール</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>基本操作</h2>
+            <table>
+                <tr>
+                    <td>前進</td>
+                    <td>W</td>
+                </tr>
+                <tr>
+                    <td>後退</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td>左移動</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>右移動</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>上昇</td>
+                    <td>↑</td>
+                </tr>
+                <tr>
+                    <td>下降</td>
+                    <td>↓</td>
+                </tr>
+                <tr>
+                    <td>左旋回</td>
+                    <td>←</td>
+                </tr>
+                <tr>
+                    <td>右旋回</td>
+                    <td>→</td>
+                </tr>
+                <tr>
+                    <td>離着陸</td>
+                    <td>スペース</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>注意点</h2>
+            <p>
+                ドローンの操作は、周囲の安全を確認してから行ってください。<br>
+                また、ドローンのバッテリー残量や通信状態にも注意してください。<br>
+                操作中にドローンが不安定になった場合は、すぐに着陸させてください。<br>
+                ドローンの操作には十分な注意が必要です。<br>
+                <b>特に、周囲の人や物体に注意してください。</b>
+            </p>
+        </section>
+        <section>
+            <h2>機体の角度のお話</h2>
+            <p>ちょっと技術的なお話をします。<br>
+            ドローンは、機体を傾けることで揚力の向きを変えて移動できます。<br>
+            他にもヨー(水平軸回転)では、反トルクのためにプロペラの回転速度を変えて姿勢を制御しています。<br>
+            機体を傾けるときは、上側になる向きのプロペラの回転速度を上げ、下側になる向きのプロペラの回転速度を下げることで、機体が傾くように制御しています。<br>
+            ヨーの場合は、反トルクを作るために、回転する向きが違うプロペラの回転速度を変えることで、機体が水平軸回転するように制御しています。<br>
+            つまり、ドローンはプロペラの回転速度を変えることで、機体の傾きや姿勢を制御しているということです。
+            </p>
+        </section>
+        <section>
+            <h2>ピッチとロール</h2>
+            <p>ピッチとは、ドローンの前後の傾きのことを指します。<br>
+            ピッチを調整することで、ドローンの前進や後退の速度を制御することができます。<br>
+            ピッチの調整は、ドローンの安定飛行にとって非常に重要です。<br>
+            このドローンで言うロールとは、ドローンの左右の傾きのことを指します。<br>
+            ロールを調整することで、ドローンの左右の移動速度を制御することができます。<br>
+            ロールの調整も、ドローンの安定飛行にとって非常に重要です。
+            </p>
+            <img src="images/pitch.png" alt="ピッチの説明画像">
+        </section>
+        <section>
+            <h2>ヨー</h2>
+            <p>ヨーとは、ドローンの水平軸回転のことを指します。<br>
+            ヨーを調整することで、ドローンの方向転換を制御することができます。<br>
+            ヨーの調整も、ドローンの安定飛行にとって非常に重要です。
+            </p>
+            <img src="images/yaw.png" alt="ヨーの説明画像">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Joe Matsumura</p>
+    </footer>
+
+</body>
+
+</html>
